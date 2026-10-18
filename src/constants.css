@@ -1,0 +1,14 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+
+/* Color Palette */
+:root {
+  --text_color: #14213d;
+  --primary_blue: #1d3557;
+  --accent_brown: #6b4226;
+  --muted_text_color: #6a5a4a;
+  --page_background: #faf6ee;
+  --white_color: #fff;
+  --sand_color: #d9c3a0;
+  --border_color: #e6dcc9;
+}

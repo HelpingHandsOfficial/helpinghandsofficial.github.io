@@ -1,0 +1,85 @@
+/* ECHIPA */
+.team_grid {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+}
+.team_member {
+  position: relative;
+  background: var(--white_color);
+  padding: 1.4rem 1.25rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border_color);
+}
+.team_member:nth-child(even) {
+  border-radius: 22px 22px 22px 60px;
+}
+.team_member:nth-child(odd) {
+  border-radius: 22px 60px 22px 22px;
+}
+.team_member::before {
+  content: "";
+  position: absolute;
+  inset: 6px -4px -10px;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--glow_color);
+  filter: blur(26px);
+  opacity: 0.55;
+  animation: glow 6s ease-in-out infinite;
+  animation-delay: var(--animation_delay, 0s);
+}
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.03) translateY(4px);
+  }
+}
+.member_photo {
+  width: 128px;
+  height: 128px;
+  margin: 0.4rem auto 1rem;
+  border-radius: 50%;
+  background: var(--card_color);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font:
+    700 2.4rem Fraunces,
+    serif;
+  overflow: hidden;
+  position: relative;
+}
+.member_photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team_member h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.member_role {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.15rem 0.85rem;
+  border-radius: 99px;
+  background: var(--card_color);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.team_member a {
+  display: block;
+  font-size: 0.95rem;
+  word-break: break-all;
+}
