@@ -3,7 +3,7 @@ export const team = [
     name: "Călugăru Mara Alexandra",
     role: "Product Owner",
     email: "mara.calugaru@stud.fiir.upb.ro",
-    photo: "img/membru1.jpg",
+    photo: "img/Mara_profile.jpeg",
     card_color: "#6b4226",
     glow_color: "#7ea6e0",
   },
