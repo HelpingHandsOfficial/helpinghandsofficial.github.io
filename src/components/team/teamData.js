@@ -27,7 +27,7 @@ export const team = [
     name: "Dragan Alexandra-Elena",
     role: "Designer",
     email: "alexandra.dragan@stud.acs.upb.ro",
-    photo: "img/membru4.jpg",
+    photo: "img/AlexandraDragan.jpeg",
     card_color: "#3f5f8f",
     glow_color: "#d9a77a",
   },
