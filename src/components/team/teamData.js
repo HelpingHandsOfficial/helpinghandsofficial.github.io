@@ -11,7 +11,7 @@ export const team = [
     name: "Andronache Sebastian George",
     role: "Developer",
     email: "sandronache@stud.acs.upb.ro",
-    photo: "img/membru3.jpg",
+    photo: "img/sebastian.jpeg",
     card_color: "#9a6b3f",
     glow_color: "#a9c4ee",
   },
