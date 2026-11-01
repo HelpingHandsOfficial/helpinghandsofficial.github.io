@@ -1,31 +1,220 @@
 export const interviews = [
+  // Model
+  // {
+  //   number: 1,
+  //   category: "client",
+  //   status: "De completat",
+  //   name: "Numele clientului",
+  //   occupation: "Ocupația clientului",
+  //   description: "Informațiile vor fi adăugate aici.",
+  //   evidence: [ // nu e obligatorie se poate lasa []
+  //     {
+  //       src: "/img/dovada-1.jpg",
+  //       alt: "Descrierea imaginii",
+  //     }, {
+  //       src: "/img/dovada-2.jpg",
+  //       alt: "Descrierea imaginii",
+  //     }, {
+  //       src: "/img/dovada-3.jpg",
+  //       alt: "Descrierea imaginii",
+  //     }, {
+  //       src: "/img/dovada-4.jpg",
+  //       alt: "Descrierea imaginii",
+  //     }
+  //   ],
+  //   questions: [
+  //     {
+  //       question: "Întrebarea va fi adăugată aici.",
+  //       answer: "Răspunsul va fi adăugat aici.",
+  //     },
+  //   ],
+  // },
   {
     number: 1,
     category: "client",
-    status: "De completat",
-    name: "Numele clientului",
-    occupation: "Ocupația clientului",
-    description: "Informațiile vor fi adăugate aici.",
-    evidence: [ // nu e obligatorie se poate lasa []
-      {
-        src: "/img/dovada-1.jpg",
-        alt: "Descrierea imaginii",
-      }, {
-        src: "/img/dovada-2.jpg",
-        alt: "Descrierea imaginii",
-      }, {
-        src: "/img/dovada-3.jpg",
-        alt: "Descrierea imaginii",
-      }, {
-        src: "/img/dovada-4.jpg",
-        alt: "Descrierea imaginii",
-      }
-    ],
+    status: "Completat",
+    name: "Maria",
+    occupation: "colega de munca a Alexandrei",
+    description: "",
+    evidence: [],
     questions: [
       {
-        question: "Întrebarea va fi adăugată aici.",
-        answer: "Răspunsul va fi adăugat aici.",
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da",
       },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Da, acum vreo 8 luni de zile, eu si sotul meu am vrut sa refacem instalatia la bucatarie. Ne-am gandit ca ne-ar fi destul de utile niste modificari practice, cum ar fi sa mutam priza pentru cuptor sau sa adaugam doua prize pe blat. Niciodata nu ai prea multe prize intr-o casa.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "De cand ne-am mutat in noul apartament, am inceput sa folosim grupul de Facebook al blocului pentru probleme de genul acesta. Vecinii mi-au recomandat 3 oameni, i-am sunat pe toti si l-am ales pe cel care a putut veni in urmatoarea saptamana.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "Initial, ne a zis de 800 de lei, dar in final a fost 850, pentru ca a mai folosit ceva tuburi de protectie in plus. Totusi, ne a anuntat din timp, asa ca nu ne a deranjat.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Am platit cash la final. Doar asa accepta. Fara bon, fara factura.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Cu acest electrician, nu. Dar acum cativa ani am avut un zugrav care s-a facut nevazut dupa ce a luat avansul.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "500 de lei si vreo 3 saptamani",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu prea. Ma bazez pe recomandari de la prieteni.",
+      }
+    ],
+  },
+  {
+    number: 2,
+    category: "client",
+    status: "Completat",
+    name: "Raul",
+    occupation: "colegul de munca al Alexandrei, chirias in sectorul 2",
+    description: "",
+    evidence: [],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da, in vara am avut de montat un aer conditionat.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Mi am cumparat un AC, iar problema mea a fost pretul de montare oferit de magazin. Era mult prea mare si am zis ca o sa gasesc eu pe cineva care ma rezolva la un pret mai mic.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "Am cautat pe Olx si pe Facebook. Am sunat 6 oameni, vreo 3 parca nu mi-au raspuns, unul mi-a cerut un pret imens. Cred ca mi a luat cam 3 zile.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "La telefon a zis “sigur, doar 600 de lei”. La fata locului a iesit 750 pentru ca am 'nu-stiu-cum' peretele si a trebuit un suport special.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Transfer pe Revolut. Fara bon, fara factura.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Da, ce obicei mesterii cam tarzie. Imi amintesc ca unul nu mi a terminat odata lucrarea ca nu avea burghiul potrivit. A zis ca va reveni si m-a tot amanat pana m-am plictisit sa il tot sun.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "Destul de mult",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Da, m-am uitat dupa recenzii pe bune si preturi cat de clare de la inceput. Nu am gasit ceva cu amandoua.",
+      }
+    ],
+  },
+  {
+    number: 3,
+    category: "client",
+    status: "Completat",
+    name: "Gabriela",
+    occupation: "colega de munca a Alexandrei, chiriasa",
+    description: "",
+    evidence: [],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Da, cred ca acum aproximativ 3 luni am chemat un instalator pentru scurgerea de la chiuveta. Sifonul de la bucatarie curgea si facea mizerie sub chiuveta. Proprietarul nu era in tara si mi a zis sa caut eu pe cineva.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "Am cautat pe Goole un instalator cu recenzii ok. L-am sunat in ziua aceea si a venit dupa la cateva zile distanta.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "Mi-a zis 200 de lei la telefon si 200 de lei a fost si in final.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Cash",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Nu, nu am avut. Ce-i drept, m-am mutat de la ai mei de putin timp si ei se ocupam pana acum de asemenea probleme.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "Inca nu m-am lovit atat de mult de problemele vietii.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu",
+      }
+    ],
+  },
+  {
+    number: 4,
+    category: "client",
+    status: "Completat",
+    name: "Liviu",
+    occupation: "colegul de munca al Alexandrei",
+    description: "",
+    evidence: [],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Eu nu am avut nevoie, dar pot sa iti povestesc despre situația unei cunostiinte.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Acesta tocmai se mutarsera si voia o reinprospatare pentru pereti.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "Cunostiinta a gasit mesterul pe Internet, printr-un anunt in care se recomanda drept “rapid si serios”. A pus la punct detaliile la telefon, conversatia cred ca nu a tinut prea mult, cel mult 10 minute. Mesterul a venit a doua zi si a inceput imediat.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "S-au inteles pentru aproximativ 3000 de lei. Dupa 2 zile a mai cerut inca 500 “pentru material mai bun”.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "A platit cash, aproape toata suma de la inceput. Fara bon sau chitanta.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Da, despre lucrarea despre care ti-am povestit. Vopseaua s-a cojit, iar unul dintre pereti avea pete. Chiar daca i s-au comunicat problemele dupa, mesterul respectiv nu a revenit sa le rezolve.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "A platit in jur de 3500 de lei si apoi a fost nevoie, din pacate, de o alta persoana care sa refaca totul. Si vreo trei saptamani de trait in praf si cu mobila pe hol.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu a folosit.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu",
+      }
     ],
   },
   {

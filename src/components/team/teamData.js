@@ -25,7 +25,7 @@ export const team = [
   },
   {
     name: "Dragan Alexandra-Elena",
-    role: "Designer",
+    role: "Developer",
     email: "alexandra.dragan@stud.acs.upb.ro",
     photo: "img/AlexandraDragan.jpeg",
     card_color: "#3f5f8f",
