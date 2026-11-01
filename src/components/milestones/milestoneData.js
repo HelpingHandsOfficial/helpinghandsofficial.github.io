@@ -13,6 +13,17 @@ export const milestones = [
       { id: "venituri", label: "Surse de venit" },
     ],
   },
-  { id: "milestone2", label: "Milestone 2", sections: [] },
+  {
+    id: "milestone2",
+    label: "Milestone 2",
+    sections: [
+      { id: "m2-identificarea-problemei", label: "Identificarea problemei" },
+      { id: "m2-solutia", label: "Soluția la care ne-am gândit" },
+      { id: "m2-customer-discovery", label: "Strategia de Customer Discovery" },
+      { id: "m2-procesul", label: "Procesul" },
+      { id: "m2-impact-insight-uri", label: "Impactul insight-urilor asupra produsului" },
+      { id: "m2-concluzie", label: "Concluzie" },
+    ],
+  },
   { id: "milestone3", label: "Milestone 3", sections: [] },
 ];

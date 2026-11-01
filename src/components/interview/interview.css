@@ -1,0 +1,293 @@
+.interview_card {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.3rem;
+  border: 1px solid var(--border_color);
+  border-radius: 18px 42px 18px 18px;
+  background: var(--white_color);
+  box-shadow: 0 10px 24px rgba(20, 33, 61, 0.08);
+}
+
+.interview_category + .interview_category {
+  margin-top: 2rem;
+} 
+
+.interview_category > h3 {
+  margin: 1.4rem 0 0.6rem;
+  color: var(--sand_color);
+  font-size: 1.35rem;
+}
+
+.interview_carousel {
+  margin: 0 3rem;
+}
+
+.interview_carousel_stage {
+  position: relative;
+}
+
+.interview_carousel_control {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--border_color);
+  border-radius: 50%;
+  background: var(--primary_blue);
+  color: #fff;
+  cursor: pointer;
+  font: 400 2rem/1 Figtree, system-ui, sans-serif;
+  transform: translateY(-50%);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.interview_carousel_control:hover {
+  background: var(--accent_brown);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.interview_carousel_previous {
+  left: -3.2rem;
+}
+
+.interview_carousel_next {
+  right: -3.2rem;
+}
+
+.interview_carousel_status {
+  margin-top: 0.65rem;
+  color: var(--muted_text_color);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.interview_card_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border_color);
+  color: var(--primary_blue);
+  font: 700 1.2rem Fraunces, Georgia, serif;
+}
+
+.placeholder_badge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #f0e5d2;
+  color: var(--muted_text_color);
+  font: 600 0.75rem Figtree, system-ui, sans-serif;
+}
+
+.interview_card_fields {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.interview_identity {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.interview_identity strong {
+  color: var(--primary_blue);
+  font: 700 1.35rem Fraunces, Georgia, serif;
+}
+
+.interview_identity span {
+  color: var(--accent_brown);
+  font-size: 0.95rem;
+}
+
+.interview_business_meta {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 2rem;
+  color: var(--accent_brown);
+  font-size: 0.95rem;
+}
+
+.interview_business_name {
+  margin-bottom: -0.3rem;
+}
+
+.interview_field {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.interview_field strong {
+  color: var(--accent_brown);
+  font: 400;
+}
+
+.interview_field span {
+  color: var(--muted_text_color);
+  white-space: pre-line;
+}
+
+.interview_questions {
+  display: grid;
+  gap: 0.8rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border_color);
+}
+
+.interview_questions h4 {
+  margin: 0;
+  color: var(--primary_blue);
+  font: 700 1.1rem Fraunces, Georgia, serif;
+}
+
+.evidence_section {
+  display: grid;
+  gap: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border_color);
+}
+
+.evidence_section h4 {
+  margin: 0;
+  color: var(--primary_blue);
+  font: 700 1.1rem Fraunces, Georgia, serif;
+}
+
+.evidence_grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.evidence_image_button {
+  overflow: hidden;
+  padding: 0;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--border_color);
+  border-radius: 12px;
+  background: var(--page_background);
+  cursor: zoom-in;
+}
+
+.evidence_image_button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.evidence_image_button:hover img {
+  transform: scale(1.04);
+}
+
+.evidence_controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: var(--muted_text_color);
+  font-size: 0.85rem;
+}
+
+.evidence_controls button,
+.evidence_lightbox_close {
+  border: 0;
+  color: var(--primary_blue);
+  background: transparent;
+  cursor: pointer;
+  font: 700 1.2rem Figtree, system-ui, sans-serif;
+}
+
+.evidence_carousel_control {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  background: rgba(20, 33, 61, 0.82);
+  color: #fff;
+  cursor: pointer;
+  font: 400 2rem/1 Figtree, system-ui, sans-serif;
+  transform: translateY(-50%);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.evidence_carousel_control:hover {
+  background: var(--accent_brown);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.evidence_carousel_previous {
+  left: 0.65rem;
+}
+
+.evidence_carousel_next {
+  right: 0.65rem;
+}
+
+.evidence_lightbox {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: rgba(20, 33, 61, 0.9);
+  cursor: zoom-out;
+}
+
+.evidence_lightbox img {
+  max-width: min(94vw, 1400px);
+  max-height: 92vh;
+  object-fit: contain;
+  cursor: default;
+}
+
+.evidence_lightbox_close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .interview_carousel {
+    margin: 0 1rem;
+  }
+
+  .interview_carousel_previous {
+    left: -0.8rem;
+  }
+
+  .interview_carousel_next {
+    right: -0.8rem;
+  }
+
+  .interview_business_meta {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .interview_card_heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .evidence_grid {
+    grid-template-columns: 1fr;
+  }
+}
