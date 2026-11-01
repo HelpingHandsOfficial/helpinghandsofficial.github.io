@@ -82,10 +82,10 @@ const generatedClientInterviews = Array.from({ length: 67 }, (_, index) => {
   ];
 
   return {
-    number: 4 + index + 1,
+    number: 5 + index + 1,
     category: "client",
     status: "Completat",
-    name: `Client ${index + 5}`,
+    name: `Client ${index + 6}`,
     occupation: "Client",
     description: `A avut nevoie de un meseriaș recent și a folosit ${source}. Experiența a evidențiat o dificultate ${difficulty}, cu impact asupra încrederii și a transparenței. ${pain}.`,
     evidence: [],
@@ -315,11 +315,6 @@ const legacyClientInterviews = [
       }
     ],
   },
-];
-
-export const clientInterviews = [...legacyClientInterviews, ...generatedClientInterviews];
-
-const mesterInterviews = [
   {
     number: 5,
     category: "client",
@@ -384,6 +379,11 @@ const mesterInterviews = [
       }
     ],
   },
+];
+
+export const clientInterviews = [...legacyClientInterviews, ...generatedClientInterviews];
+
+const mesterInterviews = [
   {
     number: 1,
     category: "mester",
