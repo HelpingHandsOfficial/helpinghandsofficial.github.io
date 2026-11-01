@@ -428,18 +428,6 @@ export function Milestone2() {
                 </div>
               </ExpandableSection>
               <ExpandableSection id="m2-chestionare" title="Chestionare și observații">
-                <div className="milestone2_evidence_links">
-                  <h3>Documente de evidență</h3>
-                  <div className="milestone2_link_list">
-                    <a href="https://docs.google.com/spreadsheets/d/1xrFjettODLjw9GCsgniIA9iwN8Mvhmv-jdEEQ9vYK4Y/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența oamenilor cu meșeriașii
-                    </a>
-                    <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența meșeriașilor cu oamenii
-                    </a>
-                  </div>
-                </div>
-
                 <div className="questionnaire_placeholder">
                   <div className="milestone2_stats_grid">
                     <div className="milestone2_stat_card">
