@@ -385,14 +385,14 @@ export function Milestone2() {
                 <div className="milestone2_evidence_links">
                   <h3>Documente de evidență</h3>
                   <div className="milestone2_link_list">
-                    <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer">
+                    <a href="https://docs.google.com/spreadsheets/d/1xrFjettODLjw9GCsgniIA9iwN8Mvhmv-jdEEQ9vYK4Y/edit?usp=sharing" target="_blank" rel="noreferrer">
                       Experiența oamenilor cu meșeriașii
                     </a>
-                    <a href="https://docs.google.com/spreadsheets/d/1xrFjettODLjw9GCsgniIA9iwN8Mvhmv-jdEEQ9vYK4Y/edit?usp=sharing" target="_blank" rel="noreferrer">
+                    <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer"> 
                       Experiența meșeriașilor cu oamenii
                     </a>
                     <a href="https://docs.google.com/spreadsheets/d/1yYxdqE8WyEBy8RD0QQ_qBRFqbXbk_195VD4zJFRo6bg/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența meșeriașilor cu oamenii 2
+                      Experiența oamenilor cu meșeriașii 2
                     </a>
                   </div>
                 </div>
