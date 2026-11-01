@@ -391,6 +391,7 @@ export function Milestone2() {
                     <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer"> 
                       Experiența meșeriașilor cu oamenii
                     </a>
+                    
                     <a href="https://docs.google.com/spreadsheets/d/1yYxdqE8WyEBy8RD0QQ_qBRFqbXbk_195VD4zJFRo6bg/edit?usp=sharing" target="_blank" rel="noreferrer">
                       Experiența oamenilor cu meșeriașii 2
                     </a>
