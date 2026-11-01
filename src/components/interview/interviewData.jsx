@@ -251,6 +251,226 @@ const legacyClientInterviews = [
       }
     ],
   },
+  {
+    number: 6,
+    category: "client",
+    status: "Completat",
+    name: "Dragos",
+    occupation: "colegul de munca al lui Sebi",
+    description: "",
+    evidence: [
+      {
+        src: "/img/interviews/sebi/dragos1.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/dragos2.jpeg",
+        alt: "Poza interviu",
+      }
+    ],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Am avut niste scurgeri care veneau de la un dus de la vecinii de sus si a trebuit sa vina sa repare si la noi.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "Tatal meu il stia si a fost destul de rapid procesul de a-l chema.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "Pretul il stia de la inceput dar pe final ne-a cerut si in plus ca era mai complicat.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Cash la final si nu am primit nimic ca se cunostea cu tata.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Da am avut o lucrare la o toaleta si cand a terminat a iesit mai prost decat la inceput; era o problema la trasul apei.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "In timp a durat ceva timp cam o luna cu toate sedintele si in bani.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu am folosit platforme ca in general tatal meu stia mesterii care veneau la noi.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu am incercat solutii mai bune.",
+      }
+    ],
+  },
+  {
+    number: 7,
+    category: "client",
+    status: "Completat",
+    name: "Catalin",
+    occupation: "colegul de munca al lui Sebi",
+    description: "",
+    evidence: [
+      {
+        src: "/img/interviews/sebi/catalin1.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/catalin2.jpeg",
+        alt: "Poza interviu",
+      }
+    ],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Nu mergea aparatul de aer conditionat si eu nu am reusit sa rezolv problema.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "L-a gasit fratele proprietarului garsonierei in care stau.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "De la fratele proprietarului. Da.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Cash cred la final, si am primit o hartie de la mester, dar nu mai stiu daca era exact o factura.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "In afara de verificari periodice la gaz/centrala nu am avut mesteri, deci nu prea am experienta aici; nu am avut pana acum.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "Nu se aplica.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu am folosit pana acum nicio aplicatie, am mers doar pe intrebat oameni in jur.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Din fericire nu am avut nevoie pana acum, dar o aplicatie de tipul HomeRun nu suna rau.",
+      }
+    ],
+  },
+  {
+    number: 8,
+    category: "client",
+    status: "Completat",
+    name: "Vlad",
+    occupation: "colegul de munca al lui Sebi",
+    description: "",
+    evidence: [
+      {
+        src: "/img/interviews/sebi/vlad1.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/vlad2.jpeg",
+        alt: "Poza interviu",
+      }
+    ],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da, în această primăvară.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Credeam că am o problemă la cadă, prin care pica apă pe lângă scurgere și se aduna pe podeaua băii.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "Știa o rudă 'un băiat' și am apelat la el, deci a durat câteva minute cred.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "L-am întrebat. Cred că inițial a spus cam 170 de lei (sau ceva de genul) și când i-am dat 200, i-am spus să nu-mi mai dea rest.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "La final, cash, fără acte.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Nu cred, aceasta este prima lucrare de când am plecat de la părinți.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "Nu cred că se aplică, dacă am spus nu la 6.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu am folosit nimic.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu.",
+      }
+    ],
+  },
+  {
+    number: 9,
+    category: "client",
+    status: "Completat",
+    name: "Paul",
+    occupation: "colegul de munca al lui Sebi",
+    description: "",
+    evidence: [
+      {
+        src: "/img/interviews/sebi/paul1.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/paul2.jpeg",
+        alt: "Poza interviu",
+      }
+    ],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "Da!",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Acum 6 luni pentru montarea mobilei de bucatarie.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "L-am gasit rapid. ikea deja lucra cu o echipa de mesteri. nu a trebuit sa depun efort sa caut eu.",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "Pretul stabilit de la inceput la ikea. a ramas acelasi si la final.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Card. factura.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Nu.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "N-am avut probleme cu lucrarea, timpul, costurile sau stresul. singura problema e ca un mester mi-a furat din casa un parfum. atat.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "Nu am folosit HomeRun.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Nu am cautat o alta solutie.",
+      }
+    ],
+  },
 ];
 
 export const clientInterviews = legacyClientInterviews;
