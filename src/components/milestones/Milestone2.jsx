@@ -332,22 +332,7 @@ export function Milestone2() {
             </div>
 
             <div className="milestone2_research">
-              <ExpandableSection id="m2-interviuri" title="Interviuri și răspunsuri din formulare">
-                <div className="milestone2_evidence_links">
-                  <h3>Documente de evidență</h3>
-                  <div className="milestone2_link_list">
-                    <a href="https://docs.google.com/spreadsheets/d/1xrFjettODLjw9GCsgniIA9iwN8Mvhmv-jdEEQ9vYK4Y/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența oamenilor cu meșeriașii
-                    </a>
-                    <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența meșeriașilor cu oamenii
-                    </a>
-                    <a href="https://docs.google.com/spreadsheets/d/1yYxdqE8WyEBy8RD0QQ_qBRFqbXbk_195VD4zJFRo6bg/edit?usp=sharing" target="_blank" rel="noreferrer">
-                      Experiența meșeriașilor cu oamenii 2
-                    </a>
-                  </div>
-                </div>
-
+              <ExpandableSection id="m2-interviuri" title="Interviuri">
                 <div className="milestone2_interview_summary">
                   <div className="milestone2_insight_card">
                     <span className="stat_label">Cea mai folosită metodă</span>
@@ -368,6 +353,47 @@ export function Milestone2() {
                     <span className="stat_label">Risc principal</span>
                     <strong>Costuri și calitate</strong>
                     <small>Au fost menționate costuri suplimentare, lucrări nefinalizate sau calitate necorespunzătoare.</small>
+                  </div>
+                </div>
+                <div className="interview_cards">
+                  {['client', 'mester'].map((category) => (
+                    <section className="interview_category" key={category}>
+                      <h3>{category === 'client' ? 'Clienți' : 'Meșteri'}</h3>
+                      <InterviewCarousel
+                        interviews={interviews.filter(
+                          (interview) => interview.category === category,
+                        )}
+                      />
+                    </section>
+                  ))}
+                </div>
+              </ExpandableSection>
+              <ExpandableSection id="m2-chestionare" title="Chestionare și observații">
+                <div className="milestone2_stats_grid milestone2_response_stats_grid">
+                  <div className="milestone2_stat_card">
+                    <span className="stat_label">Răspunsuri clienți</span>
+                    <strong>91 de răspunsuri</strong>
+                    <small>Răspunsuri colectate din partea clienților.</small>
+                  </div>
+                  <div className="milestone2_stat_card">
+                    <span className="stat_label">Răspunsuri meșteri</span>
+                    <strong>3 răspunsuri</strong>
+                    <small>Răspunsuri colectate din partea meșterilor.</small>
+                  </div>
+                </div>
+
+                <div className="milestone2_evidence_links">
+                  <h3>Documente de evidență</h3>
+                  <div className="milestone2_link_list">
+                    <a href="https://docs.google.com/spreadsheets/d/19vYa-9kwXB6VUpba0_w9Y9c8r3hKBqgwaKEo5XoXXwA/edit?usp=sharing" target="_blank" rel="noreferrer">
+                      Experiența oamenilor cu meșeriașii
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1xrFjettODLjw9GCsgniIA9iwN8Mvhmv-jdEEQ9vYK4Y/edit?usp=sharing" target="_blank" rel="noreferrer">
+                      Experiența meșeriașilor cu oamenii
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1yYxdqE8WyEBy8RD0QQ_qBRFqbXbk_195VD4zJFRo6bg/edit?usp=sharing" target="_blank" rel="noreferrer">
+                      Experiența meșeriașilor cu oamenii 2
+                    </a>
                   </div>
                 </div>
 
@@ -417,20 +443,6 @@ export function Milestone2() {
                   </div>
                 </div>
 
-                <div className="interview_cards">
-                  {['client', 'mester'].map((category) => (
-                    <section className="interview_category" key={category}>
-                      <h3>{category === 'client' ? 'Clienți' : 'Meșteri'}</h3>
-                      <InterviewCarousel
-                        interviews={interviews.filter(
-                          (interview) => interview.category === category,
-                        )}
-                      />
-                    </section>
-                  ))}
-                </div>
-              </ExpandableSection>
-              <ExpandableSection id="m2-chestionare" title="Chestionare și observații">
                 <div className="questionnaire_placeholder">
                   <div className="milestone2_stats_grid">
                     <div className="milestone2_stat_card">

@@ -378,6 +378,16 @@
   margin-bottom: 1.5rem;
 }
 
+.milestone2_response_stats_grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.milestone2_response_stats_grid .milestone2_stat_card {
+  align-items: center;
+  background: #fff;
+  text-align: center;
+}
+
 .milestone2_stat_card {
   display: flex;
   flex-direction: column;

@@ -1,131 +1,3 @@
-const clientAttributionPatterns = [
-  "recomandare de la familie",
-  "recomandare de la prieteni",
-  "Google reviews",
-  "căutare pe Google",
-  "recomandare din vecinătate",
-  "platformă online",
-  "postări pe Facebook",
-  "căutare locală de meseriași",
-];
-
-const clientDifficultyPatterns = [
-  "foarte greu",
-  "destul de greu",
-  "relativ greu",
-  "mediu",
-  "ușor",
-  "foarte dificil",
-];
-
-const clientTrustPatterns = [
-  "recomandarea și experiența anterioară",
-  "recenziile și seriozitatea",
-  "prețul rezonabil și disponibilitatea",
-  "calitatea lucrării și transparența",
-  "cunoașterea personală sau recomandarea din rețea",
-  "documentația, facturile și contractul",
-];
-
-const clientPainPatterns = [
-  "lipsa de disponibilitate și neprezentarea la lucru",
-  "pentru că meseriașul nu a răspuns sau a abandonat lucrarea",
-  "din cauza prețurilor neclare și a costurilor suplimentare",
-  "pentru că nu exista un criteriu clar de verificare a seriozității",
-  "din cauza lucrărilor nefinalizate sau executate necorespunzător",
-  "din cauza dificultății de a compara oferte și de a verifica reputația",
-];
-
-const clientPaymentPatterns = [
-  "cash la final, fără factură",
-  "cash la final, cu factură",
-  "card și factură",
-  "avans și rest la final",
-  "transfer bancar, fără documente clare",
-  "cash plus contract informal",
-];
-
-const clientQuestionTemplates = [
-  "Când ai avut ultima dată nevoie de un meseriaș?",
-  "Cum ai găsit ultima oară meseriașul?",
-  "Cât de ușor ți-a fost să găsești pe cineva disponibil și de încredere?",
-  "Ce a contat cel mai mult când ai ales meseriașul?",
-  "Cum ai plătit și ai primit factură sau contract?",
-  "Ai avut probleme cu un meseriaș?",
-  "Cum verifici dacă prețul cerut este corect?",
-  "Ai folosit o platformă online pentru a găsi un meseriaș?",
-];
-
-const generatedClientInterviews = Array.from({ length: 67 }, (_, index) => {
-  const source = clientAttributionPatterns[index % clientAttributionPatterns.length];
-  const difficulty = clientDifficultyPatterns[index % clientDifficultyPatterns.length];
-  const trust = clientTrustPatterns[index % clientTrustPatterns.length];
-  const pain = clientPainPatterns[index % clientPainPatterns.length];
-  const payment = clientPaymentPatterns[index % clientPaymentPatterns.length];
-
-  const timeResponses = [
-    "În ultimele 6 luni.",
-    "În ultima lună.",
-    "În ultimul an.",
-    "În ultimele 2 luni.",
-    "În ultima săptămână.",
-    "În ultimele 3 luni.",
-  ];
-
-  const platformResponses = [
-    "Da, am folosit Google reviews și căutarea locală.",
-    "Nu, nu am folosit o platformă online.",
-    "Da, dar experiența a fost inconsistență și greu de verificat.",
-    "Da, doar căutare pe Google și recomandări.",
-    "Nu, am apelat la recomandări din rețea.",
-    "Da, am testat platforme online, dar nu mi-au oferit siguranță.",
-  ];
-
-  return {
-    number: 5 + index + 1,
-    category: "client",
-    status: "Completat",
-    name: `Client ${index + 6}`,
-    occupation: "Client",
-    description: `A avut nevoie de un meseriaș recent și a folosit ${source}. Experiența a evidențiat o dificultate ${difficulty}, cu impact asupra încrederii și a transparenței. ${pain}.`,
-    evidence: [],
-    questions: [
-      {
-        question: clientQuestionTemplates[0],
-        answer: timeResponses[index % timeResponses.length],
-      },
-      {
-        question: clientQuestionTemplates[1],
-        answer: source[0].toUpperCase() + source.slice(1),
-      },
-      {
-        question: clientQuestionTemplates[2],
-        answer: difficulty[0].toUpperCase() + difficulty.slice(1) + ".",
-      },
-      {
-        question: clientQuestionTemplates[3],
-        answer: trust[0].toUpperCase() + trust.slice(1) + ".",
-      },
-      {
-        question: clientQuestionTemplates[4],
-        answer: payment[0].toUpperCase() + payment.slice(1) + ".",
-      },
-      {
-        question: clientQuestionTemplates[5],
-        answer: `Da. ${pain[0].toUpperCase()}${pain.slice(1)}.`,
-      },
-      {
-        question: clientQuestionTemplates[6],
-        answer: "Întreb mai multe oferte, compar prețurile și verific recomandările din rețea.",
-      },
-      {
-        question: clientQuestionTemplates[7],
-        answer: platformResponses[index % platformResponses.length],
-      },
-    ],
-  };
-});
-
 const legacyClientInterviews = [
   {
     number: 1,
@@ -601,7 +473,7 @@ const legacyClientInterviews = [
   },
 ];
 
-export const clientInterviews = [...legacyClientInterviews, ...generatedClientInterviews];
+export const clientInterviews = legacyClientInterviews;
 
 const mesterInterviews = [
   {
@@ -914,4 +786,4 @@ const mesterInterviews = [
   }
 ];
 
-export const interviews = [...clientInterviews, ...mesterInterviews];
+export const interviews = [...clientInterviews, ...mesterInterviews.slice(0, 3)];
