@@ -218,6 +218,70 @@ export const interviews = [
     ],
   },
   {
+    number: 5,
+    category: "client",
+    status: "Completat",
+    name: "Rares",
+    occupation: "colegul de munca al lui Sebi",
+    description: "",
+    evidence: [
+      {
+        src: "/img/interviews/sebi/rares1.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/rares2.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/rares3.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/rares4.jpeg",
+        alt: "Poza interviu",
+      }, {
+        src: "/img/interviews/sebi/rares5.jpeg",
+        alt: "Poza interviu",
+      }
+    ],
+    questions: [
+      {
+        question: "În ultimii 2 ani, ai angajat pe cineva pentru o reparație, un montaj sau o renovare în casă?",
+        answer: "M-am mutat de curand, deci am avut mai multi muncitori care sa ajute cu diverse montaje.",
+      },
+      {
+        question: "Povestește-mi ultima dată când ai avut nevoie de un meșter. Ce problemă era?",
+        answer: "Ultima oara a venit un mester pentru montarea plaselor de insecte si a jaluzelelor la noul apartament.",
+      },
+      {
+        question: "Cum ai găsit meșterul și cât ți-a luat până ai găsit pe cineva potrivit?",
+        answer: "L-am gasit pe net cautand oferte pentru jaluzele, acestia aveau oferta si pentru plasele de insecte, asa ca am zis sa luam aceeasi persoana pentru ambele (desi gasisem oferta pentru plasele de insecte de la altcineva si pe grupul de bloc).",
+      },
+      {
+        question: "Cum ai aflat prețul? A rămas același la final?",
+        answer: "Exista afisat pe site, dar am primit o reducere pentru plase, avand in vedere ca voiam si jaluzele.",
+      },
+      {
+        question: "Cum ai plătit (avans, cash, card, la final)? Ai primit factură sau contract?",
+        answer: "Am platit un avans cand a venit la masurarea ferestrelor, dupa am platit restul la montare. Ambele au fost platite cash, fara factura.",
+      },
+      {
+        question: "Ai avut vreodată o lucrare neterminată, făcută prost sau mai scumpă decât s-a stabilit? Ce s-a întâmplat?",
+        answer: "Nimic grav, la montajele facute de dezvoltator am avut mai multe probleme totusi (pete de vopsea pe parchet, toaleta montata defectuos, defecte la vopsire la un colt). A avut fratele meu atunci cand si-a facut clinca o problema cu niste meseriasi cu care a facut contract (recomandati de o cunostinta): nu s-au mai prezentat dupa cateva luni pentru lucrare si a trebuit sa mearga in instanta pentru a-si recupera banii si sa gaseasca alti meseriasi.",
+      },
+      {
+        question: "Cât te-a costat asta în timp, bani și stres?",
+        answer: "Pentru amplasarea plaselor, singurul stres a fost ca meseriasul a dat un interval in care poate veni de mai multe zile, si a trebuit sa imi organizez putin programul dupa el. Pentru montajele de la dezvoltator momentan nu am solutionat. La fratele meu a fost un stres destul de mare sa gaseasca alti meseriasi si sa recupereze bani de la cei care nu s-au prezentat.",
+      },
+      {
+        question: "Ai folosit HomeRun sau altă platformă? Ce a mers și ce nu?",
+        answer: "De obicei accesam direct pagina meseriasului sau mergem pe recomandari de la cunoscuti, nu folosim platforme centralizate.",
+      },
+      {
+        question: "Ai căutat activ o soluție mai bună? Ce ai încercat?",
+        answer: "Momentan a mers destul de bine cu modul in care gasim meseriasi.",
+      }
+    ],
+  },
+  {
     number: 1,
     category: "mester",
     status: "Completat",
