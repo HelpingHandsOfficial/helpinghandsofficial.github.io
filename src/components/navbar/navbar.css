@@ -1,0 +1,129 @@
+.navigation_toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.navigation_toggle[aria-expanded="true"] {
+  color: var(--sand_color);
+}
+
+.milestones_navigation {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0.75rem 0 1rem;
+  border-top: 1px solid var(--border_color);
+  border-bottom: 1px solid var(--border_color);
+  border-radius: 0;
+  background: rgba(20, 33, 61, 0.82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 8px 1px rgba(255, 255, 255, 0.08),
+    0 10px 15px -3px rgba(20, 33, 61, 0.18),
+    0 4px 6px -2px rgba(20, 33, 61, 0.1);
+}
+
+.milestones_navigation .content_wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--milestone-count), minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0;
+}
+
+.milestone_navigation_group {
+  min-width: 0;
+  padding: 0 1.25rem;
+}
+
+.milestone_navigation_group + .milestone_navigation_group {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.milestone_navigation_title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font: 700 1.15rem Fraunces, Georgia, serif;
+  text-align: left;
+}
+
+.milestone_navigation_title:not(:disabled) {
+  cursor: pointer;
+}
+
+.milestone_navigation_title:not(:disabled):hover,
+.milestone_navigation_group.is-active .milestone_navigation_title {
+  color: var(--sand_color);
+}
+
+.milestone_navigation_title:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.milestone_navigation_title:focus-visible,
+.milestone_navigation_sections a:focus-visible {
+  outline: 3px solid var(--sand_color);
+  outline-offset: 3px;
+}
+
+.milestone_navigation_sections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding-left: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.milestone_navigation_sections a {
+  display: block;
+  padding: 0.15rem 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.milestone_navigation_sections a:hover {
+  color: var(--sand_color);
+}
+
+@media (max-width: 600px) {
+  .milestones_navigation {
+    width: 100vw;
+  }
+
+  .milestones_navigation .content_wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .milestone_navigation_group {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .milestone_navigation_group + .milestone_navigation_group {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 0;
+    padding-top: 0.8rem;
+  }
+
+  .milestone_navigation_title {
+    margin-bottom: 0.7rem;
+  }
+}

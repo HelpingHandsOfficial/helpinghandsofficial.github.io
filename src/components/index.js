@@ -5,3 +5,4 @@ export { Milestone1 } from "./milestones/Milestone1.jsx";
 export { Milestone2 } from "./milestones/Milestone2.jsx";
 export { Milestone3 } from "./milestones/Milestone3.jsx";
 export { milestones } from "./milestones/milestoneData.js";
+export { Navbar } from "./navbar/Navbar.jsx";

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DecorativeShapes, Milestone1, Milestone2, Milestone3, MilestoneIcon, Team, TeamIcon, milestones, } from "./components/index.js";
+import { DecorativeShapes, Milestone1, Milestone2, Milestone3, Navbar, Team, milestones, } from "./components/index.js";
 
 const milestoneComponents = {
   milestone1: Milestone1,
@@ -23,6 +23,10 @@ export default function App() {
   }, [activeMilestone]);
 
   function selectMilestone(id, focus = false) {
+    if (id !== "milestone1") {
+      return;
+    }
+
     setActiveMilestone(id);
 
     if (focus) {
@@ -31,6 +35,21 @@ export default function App() {
 
     window.setTimeout(() => {
       document.getElementById("milestones")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 0);
+  }
+
+  function selectSection(milestoneId, sectionId) {
+    if (milestoneId !== "milestone1") {
+      return;
+    }
+
+    setActiveMilestone(milestoneId);
+
+    window.setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
@@ -50,19 +69,17 @@ export default function App() {
 
   return (
     <>
-      {/* Navbar */}
-      <nav className="main_navigation" aria-label="Navigare">
-        <div className="content_wrapper">
-          <a className="navigation_link" href="#echipa">
-            <TeamIcon />
-            Echipa
-          </a>
-          <a className="navigation_link" href="#milestones">
-            <MilestoneIcon />
-            Milestones
-          </a>
-        </div>
-      </nav>
+      <Navbar
+        activeMilestone={activeMilestone}
+        onSectionSelect={selectSection}
+        onMilestoneSelect={(id) => {
+          selectMilestone(id);
+          document.getElementById("milestones")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }}
+      />
 
       {/* Hero Section */}
       <header className="hero_section">

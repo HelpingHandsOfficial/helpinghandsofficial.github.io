@@ -33,15 +33,28 @@ a:focus-visible {
 
 /* navigare */
 .main_navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
   padding: 0.65rem 0;
-  background: rgba(250, 246, 238, 0.82);
+  background: transparent;
+  border-bottom: 1px solid var(--text_color);
+}
+.main_navigation::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: rgba(20, 33, 61, 0.82);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border_color);
+  content: "";
 }
 .main_navigation .content_wrapper {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   gap: 0.65rem;
@@ -56,7 +69,7 @@ a:focus-visible {
   align-items: center;
   gap: 0.45rem;
   text-decoration: none;
-  color: var(--text_color);
+  color: #fff;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.55rem 1rem;
@@ -68,11 +81,11 @@ a:focus-visible {
   width: 1.1rem;
   height: 1.1rem;
   flex: 0 0 auto;
-  color: var(--accent_brown);
+  color: var(--sand_color);
   transition: transform 0.2s ease;
 }
 .navigation_link:hover {
-  color: var(--accent_brown);
+  color: var(--sand_color);
   transform: translateY(-2px);
 }
 .navigation_link:hover .navigation_icon {
@@ -89,7 +102,7 @@ a:focus-visible {
   bottom: 0.22rem;
   left: 1rem;
   height: 2px;
-  background: var(--accent_brown);
+  background: var(--sand_color);
   border-radius: 99px;
   transform: scaleX(0);
   transform-origin: center;
@@ -112,7 +125,7 @@ a:focus-visible {
 header.hero_section {
   position: relative;
   overflow: hidden;
-  background: var(--text_color);
+  background: #14213d;
   color: #fff;
   padding: 6rem 0 6.5rem;
 }
