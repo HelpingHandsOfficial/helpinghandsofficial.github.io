@@ -245,3 +245,31 @@
   right: -130px;
   top: -160px;
 }
+
+.milestone3_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 2rem 0;
+}
+
+.milestone3_links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: var(--sand_color);
+  color: var(--primary_blue);
+  border: 2px solid var(--sand_color);
+  border-radius: 0.7rem 1.2rem 0.7rem 0.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.milestone3_links a:hover {
+  background: var(--white_color);
+  border-color: var(--white_color);
+  transform: translateY(-2px);
+}

@@ -46,7 +46,7 @@ export function Navbar({ activeMilestone, onMilestoneSelect, onSectionSelect }) 
                 <button
                   className="milestone_navigation_title"
                   type="button"
-                  disabled={milestone.id === "milestone3"}
+                  //disabled={milestone.id === "milestone3"}
                   onClick={() => onMilestoneSelect(milestone.id)}
                 >
                   {milestone.label}

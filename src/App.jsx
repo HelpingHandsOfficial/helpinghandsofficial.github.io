@@ -130,7 +130,7 @@ export default function App() {
                 aria-controls={milestone.id}
                 aria-selected={activeMilestone === milestone.id}
                 tabIndex={activeMilestone === milestone.id ? 0 : -1}
-                disabled={milestone.id === "milestone3"} // modifica cand este necesar pentru a activa/dezactiva milestones
+                //disabled={milestone.id === "milestone3"} // modifica cand este necesar pentru a activa/dezactiva milestones
                 onClick={() => selectMilestone(milestone.id)}
                 onKeyDown={(event) => handleTabKeyDown(event, index)}
               >
