@@ -25,5 +25,12 @@ export const milestones = [
       { id: "m2-concluzie", label: "Concluzie" },
     ],
   },
-  { id: "milestone3", label: "Milestone 3", sections: [] },
+  {
+    id: "milestone3",
+    label: "Milestone 3",
+    sections: [
+      { id: "m3-figma-mockup", label: "Figma Mockup" },
+      { id: "m3-landing-page", label: "Landing Page" },
+    ],
+  },
 ];
