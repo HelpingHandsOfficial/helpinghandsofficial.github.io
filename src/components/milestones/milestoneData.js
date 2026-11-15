@@ -37,10 +37,10 @@ export const milestones = [
     id: "milestone4",
     label: "Milestone 4",
     sections: [
-      { id: "m4-interviuri", label: "Interviuri" },
-      { id: "m4-persona", label: "Persona principală" },
-      { id: "m4-povesti", label: "Povești de utilizator" },
-      { id: "m4-fluxuri", label: "Cazuri de utilizare și fluxuri" },
+      { id: "interviuri", label: "Interviuri" },
+      { id: "persona", label: "Personas" },
+      { id: "povesti", label: "Povești de utilizator" },
+      { id: "fluxuri", label: "Cazuri de utilizare și fluxuri" },
     ],
   },
 ];
