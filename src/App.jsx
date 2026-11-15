@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { DecorativeShapes, Milestone1, Milestone2, Milestone3, Navbar, Team, milestones, } from "./components/index.js";
+import { DecorativeShapes, Milestone1, Milestone2, Milestone3, Milestone4, Navbar, Team, milestones, } from "./components/index.js";
 
 const milestoneComponents = {
   milestone1: Milestone1,
   milestone2: Milestone2,
   milestone3: Milestone3,
+  milestone4: Milestone4,
 };
 
 function getInitialMilestone() {

@@ -33,4 +33,11 @@ export const milestones = [
       { id: "m3-landing-page", label: "Landing Page" },
     ],
   },
+  {
+    id: "milestone4",
+    label: "Milestone 4",
+    sections: [
+      
+    ],
+  },
 ];
