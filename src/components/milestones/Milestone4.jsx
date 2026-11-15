@@ -41,7 +41,7 @@ export function Milestone4() {
           <div className="advantage_grid" style={{ marginTop: "2rem" }}>
             <article className="advantage_card">
               <span>Interviu 1</span>
-              <h3>Cristian, 20 de ani, chiriaș</h3>
+              <h3>Marian, 20 de ani, chiriaș</h3>
               <p><strong>Data / locul:</strong> Online, pe Discord</p>
               <p><strong>Cum a decurs:</strong> a folosit aplicația cu ușurință și i s-a părut intuitivă.</p>
               <p><strong>Ce i-a plăcut:</strong> simplitatea fluxului și claritatea ecranelor.</p>
@@ -52,7 +52,7 @@ export function Milestone4() {
                 Vezi dovada aici
                 </a></p>
             </article>
-            <article className="advantage_card">
+            {/* <article className="advantage_card">
               <span>Interviu 2</span>
               <h3>[Nume, vârstă, ocupație]</h3>
               <p>[de completat: context, sarcini testate, observații, citate scurte, probleme]</p>
@@ -61,7 +61,7 @@ export function Milestone4() {
               <span>Interviu 3</span>
               <h3>[Nume, vârstă, ocupație]</h3>
               <p>[de completat: context, sarcini testate, observații, citate scurte, probleme]</p>
-            </article>
+            </article> */}
           </div>
         </div>
       </section>
