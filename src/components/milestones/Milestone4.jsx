@@ -52,12 +52,30 @@ export function Milestone4() {
                 Vezi dovada aici
                 </a></p>
             </article>
-            {/* <article className="advantage_card">
-              <span>Interviu 2</span>
-              <h3>[Nume, vârstă, ocupație]</h3>
-              <p>[de completat: context, sarcini testate, observații, citate scurte, probleme]</p>
-            </article>
             <article className="advantage_card">
+              <span>Interviu 2</span>
+              <h3>Mara, 24 de ani, chiriașă</h3>
+              <p><strong>Data / locul:</strong> Online, pe Discord</p>
+              <p><strong>Cum a decurs:</strong> a folosit aplicația cu ușurință.</p>
+              <p><strong>Ce i-a plăcut:</strong> secțiunile deja existente și faptul că aplicația este destul de clean.</p>
+              <p><strong>Ce ar modifica:</strong></p>
+              <ul>
+                <li>Pe pagina principală, în loc de recomandări de meșteri, să apară meșterii cu care a mai colaborat în trecut. Secțiunea deja existentă în profil să apară și pe pagina de home, când utilizatorul nu mai este în starea de cold start.</li>
+                <li>Slider-ul de la filtre să fie modificat, iar valorile afișate să includă și unitatea de măsură.</li>
+                <li>Butonul de înapoi să rămână mereu vizibil în partea de sus.</li>
+                <li>Mai multe funcționalități de filtrare direct din filtre, crescător și descrescător.</li>
+                <li>La programare, data curentă să fie preselectată, iar orele la care meșterul nu mai poate să fie tăiate.</li>
+                <li>Eliminarea estimării orelor de lucru de la client, deoarece clientul nu știe cât va dura un serviciu. Ar fi mai bine să rămână doar partea „de ce problemă are“, iar meșterul să decidă durata lucrării pe baza ei.</li>
+                <li>La recenzii, evaluare și cu jumătăți de măsură, pentru ca evaluarea să fie mai exactă.</li>
+                <li>La poze, posibilitatea de a adăuga o descriere a imaginii, pentru ca ceilalți utilizatori să știe la ce se uită. Exemplu: „Am schimbat apometrul - apometru nou“.</li>
+              </ul>
+              <p><strong>Dovada:</strong>{" "}
+                <a href="https://drive.google.com/file/d/1ITx1jVpKHvio-u6D_66Y9-NkIuvFIiNY/view?usp=sharing" target="_blank" rel="noreferrer">
+                  Vezi dovada aici
+                </a>
+              </p>
+            </article>
+            {/* <article className="advantage_card"> 
               <span>Interviu 3</span>
               <h3>[Nume, vârstă, ocupație]</h3>
               <p>[de completat: context, sarcini testate, observații, citate scurte, probleme]</p>
