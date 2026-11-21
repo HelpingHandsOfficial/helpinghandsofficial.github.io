@@ -50,7 +50,7 @@ export function Milestone3() {
           </div>
           <div className="milestone3_links">
             <a
-              href="https://alexandra200312.github.io/Helping-Hands/"
+              href="https://helpinghandsofficial.github.io/HelpingHands/"
               target="_blank"
               rel="noopener noreferrer"
             >
