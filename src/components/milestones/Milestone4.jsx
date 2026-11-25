@@ -130,6 +130,19 @@ export function Milestone4() {
                 </a>
               </p>
             </article>
+            <article className="advantage_card">
+              <span>Interviu 5</span>
+              <h3>Levent, 23 de ani</h3>
+              <p><strong>Data / locul:</strong> Online, pe Discord</p>
+              <p><strong>Cum a decurs:</strong> i s-a părut ușor de folosit, intuitivă, a asemănat-o cu aplicația celor de la Fan Courier.</p>
+              <p><strong>Ce i-a plăcut:</strong> i-a plăcut faptul că lucrurile cele mai importante erau ușor de accesat și văzut, i-a plăcut simplitatea și focusul pe lucrurile care chiar contează pentru utilizatori.</p>
+              <p><strong>Ce a lipsit:</strong> și-ar fi dorit ca tag-urile meșterilor să fie și customizabile de către utilizatori.</p>
+              <p><strong>Dificultate observată:</strong> multe butoane de tip „Vezi mai multe” sau alte locuri care aveau aceeași nuanță, un gri foarte șters, le-a observat cu greu, iar la unele din secțiuni era fix lucrul pe care îl căuta să îl deschidă.</p>
+              <p><strong>Dovada:</strong>
+                <a href="https://drive.google.com/file/d/1kwLaVPGTuBAfFkhxF-odF-qWBW5GWqun/view?usp=drive_link" target="_blank">
+                Vezi dovada aici
+                </a></p>
+            </article>
           </div>
         </div>
       </section>
