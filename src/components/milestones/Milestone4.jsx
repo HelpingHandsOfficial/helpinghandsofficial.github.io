@@ -1,5 +1,15 @@
 import "./milestones.css";
 import "./milestone1.css";
+import "./milestone4.css";
+
+const interfaceChanges = [
+  "modificari-01.png",
+  "modificari-02.png",
+  "modificari-03.png",
+  "modificari-04.png",
+  "modificari-05.png",
+  "modificari-06.png",
+];
 
 export function Milestone4() {
   return (
@@ -16,6 +26,7 @@ export function Milestone4() {
               <a href="#persona">Persona</a>
               <a href="#povesti">Povești de utilizator</a>
               <a href="#fluxuri">Cazuri de utilizare</a>
+              <a href="#modificari-interfata">Modificări interfață</a>
             </nav>
           </div>
         </div>
@@ -309,7 +320,32 @@ export function Milestone4() {
         </div>
       </section>
 
-    
+      <section className="content_band light_background" id="modificari-interfata">
+        <div className="content_wrapper">
+          <div className="section_header">
+            <div className="ornamental_divider" />
+            <h2>Modificări aduse interfeței</h2>
+            <p>
+              Pe baza feedbackului obținut în urma interviurilor, am optimizat
+              interfața utilizatorului și am ținut cont de aspectele esențiale,
+              astfel încât aplicația să aibă un design cât mai plăcut și să fie
+              cat mai intuitivă
+            </p>
+          </div>
+          <div className="milestone4_changes_gallery">
+            {interfaceChanges.map((image, index) => (
+              <figure className="milestone4_change_figure" key={image}>
+                <img
+                  src={`/img/milestone4/${image}`}
+                  alt={`Captură ${index + 1} cu modificări ale interfeței`}
+                  loading="lazy"
+                />
+                <figcaption>Modificare {index + 1}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

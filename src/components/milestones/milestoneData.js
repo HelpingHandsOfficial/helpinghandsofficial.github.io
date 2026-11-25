@@ -41,6 +41,7 @@ export const milestones = [
       { id: "persona", label: "Personas" },
       { id: "povesti", label: "Povești de utilizator" },
       { id: "fluxuri", label: "Cazuri de utilizare și fluxuri" },
+      { id: "modificari-interfata", label: "Modificări interfață" },
     ],
   },
   {
