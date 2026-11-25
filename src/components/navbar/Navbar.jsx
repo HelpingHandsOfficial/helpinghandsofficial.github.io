@@ -10,11 +10,23 @@ export function Navbar({ activeMilestone, onMilestoneSelect, onSectionSelect }) 
     <nav
       className="main_navigation"
       aria-label="Navigare"
-      onMouseEnter={() => setIsMilestonesOpen(true)}
-      onMouseLeave={() => setIsMilestonesOpen(false)}
+      onMouseEnter={() => {
+        if (window.matchMedia("(hover: hover)").matches) {
+          setIsMilestonesOpen(true);
+        }
+      }}
+      onMouseLeave={() => {
+        if (window.matchMedia("(hover: hover)").matches) {
+          setIsMilestonesOpen(false);
+        }
+      }}
     >
       <div className="content_wrapper">
-        <a className="navigation_link" href="#echipa">
+        <a
+          className="navigation_link"
+          href="#echipa"
+          onClick={() => setIsMilestonesOpen(false)}
+        >
           <TeamIcon />
           Echipa
         </a>
@@ -23,6 +35,13 @@ export function Navbar({ activeMilestone, onMilestoneSelect, onSectionSelect }) 
           type="button"
           aria-expanded={isMilestonesOpen}
           aria-controls="milestones_navigation"
+          onClick={() => {
+            if (window.matchMedia("(hover: hover)").matches) {
+              setIsMilestonesOpen(true);
+            } else {
+              setIsMilestonesOpen((isOpen) => !isOpen);
+            }
+          }}
         >
           <MilestoneIcon />
           Milestones
@@ -60,6 +79,7 @@ export function Navbar({ activeMilestone, onMilestoneSelect, onSectionSelect }) 
                         onClick={(event) => {
                           event.preventDefault();
                           onSectionSelect(milestone.id, section.id);
+                          setIsMilestonesOpen(false);
                         }}
                       >
                         {section.label}

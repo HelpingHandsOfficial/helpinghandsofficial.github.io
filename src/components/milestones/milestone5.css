@@ -1,0 +1,183 @@
+.milestone5_text_block {
+  max-width: 82ch;
+  margin: 0 auto;
+  color: var(--muted_text_color);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.milestone5_text_block p {
+  margin: 0 0 1rem;
+}
+
+.milestone5_text_block ul,
+.milestone5_numbered_list,
+.milestone5_detail_list {
+  padding-left: 1.4rem;
+  color: var(--muted_text_color);
+  line-height: 1.75;
+}
+
+.milestone5_text_block li + li,
+.milestone5_numbered_list li + li,
+.milestone5_detail_list li + li {
+  margin-top: 0.65rem;
+}
+
+.milestone5_text_block li::marker,
+.milestone5_numbered_list li::marker,
+.milestone5_detail_list li::marker {
+  color: var(--accent_brown);
+  font-weight: 700;
+}
+
+.milestone5_numbered_list {
+  max-width: 82ch;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.milestone5_detail_list {
+  margin: 0 auto 1.6rem;
+  max-width: 90ch;
+  font-size: 1.02rem;
+}
+
+.milestone5_detail_list strong {
+  color: var(--primary_blue);
+}
+
+.milestone5_gallery {
+  display: grid;
+  align-items: start;
+  gap: 1.2rem;
+}
+
+.milestone5_promotion_gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.milestone5_analytics_gallery {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.milestone5_figure {
+  min-width: 0;
+  margin: 0;
+  padding: 0.8rem;
+  border: 1px solid rgba(217, 195, 160, 0.65);
+  border-radius: 18px 36px 18px 18px;
+  background: var(--white_color);
+  box-shadow: 0 8px 22px rgba(38, 54, 88, 0.07);
+}
+
+.milestone5_figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.milestone5_figure figcaption {
+  padding: 0.8rem 0.25rem 0.15rem;
+  color: var(--muted_text_color);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.milestone5_comparison_gallery {
+  grid-template-columns: minmax(0, 900px);
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.milestone5_funnel_card {
+  margin: 0 auto;
+  max-width: 90ch;
+  padding: 1.5rem;
+  border: 1px solid rgba(217, 195, 160, 0.65);
+  border-radius: 18px 36px 18px 18px;
+  background: var(--white_color);
+  box-shadow: 0 8px 22px rgba(38, 54, 88, 0.06);
+  color: var(--muted_text_color);
+  line-height: 1.7;
+}
+
+.milestone5_funnel_card h3 {
+  margin: 0 0 0.8rem;
+  color: var(--primary_blue);
+  font-size: 1.25rem;
+}
+
+.milestone5_funnel_card ul {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.milestone5_funnel_card li + li {
+  margin-top: 0.4rem;
+}
+
+.milestone5_funnel_card li::marker {
+  color: var(--accent_brown);
+}
+
+.milestone5_funnel_gallery {
+  grid-template-columns: minmax(0, 900px);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.milestone5_second_funnel {
+  margin-top: 2rem;
+}
+
+.milestone5_comparative_conclusion {
+  margin-top: 1.5rem;
+  padding: 1.5rem clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: 18px 48px 18px 18px;
+  background: var(--primary_blue);
+  color: #e8e0d2;
+  text-align: center;
+}
+
+.milestone5_comparative_conclusion strong {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--sand_color);
+  font-size: 1.3rem;
+}
+
+.milestone5_comparative_conclusion p {
+  max-width: 78ch;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.milestone5_heatmap_gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.milestone5_heatmap_gallery .milestone5_figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.milestone5_heatmap_gallery .milestone5_figure figcaption {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .milestone5_heatmap_gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .milestone5_analytics_gallery,
+  .milestone5_promotion_gallery,
+  .milestone5_heatmap_gallery {
+    grid-template-columns: 1fr;
+  }
+}

@@ -43,4 +43,16 @@ export const milestones = [
       { id: "fluxuri", label: "Cazuri de utilizare și fluxuri" },
     ],
   },
+  {
+    id: "milestone5",
+    label: "Milestone 5",
+    sections: [
+      { id: "m5-obiectiv", label: "Obiectiv și colectarea datelor" },
+      { id: "m5-metrici", label: "Metrici în PostHog" },
+      { id: "m5-trafic", label: "Date și trafic web" },
+      { id: "m5-funnel", label: "Analiza funnel-urilor" },
+      { id: "m5-campanie", label: "Campania de lead-uri" },
+      { id: "m5-heatmaps", label: "Sesiuni și heatmaps" },
+    ],
+  },
 ];
