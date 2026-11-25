@@ -75,11 +75,50 @@ export function Milestone4() {
                 </a>
               </p>
             </article>
-            {/* <article className="advantage_card"> 
+            <article className="advantage_card">
               <span>Interviu 3</span>
-              <h3>[Nume, vârstă, ocupație]</h3>
-              <p>[de completat: context, sarcini testate, observații, citate scurte, probleme]</p>
-            </article> */}
+              <h3>Mihai-Adrian Vasile, 23 de ani</h3>
+              <p><strong>Data / locul:</strong> Online, pe WhatsApp</p>
+              <p><strong>Cum a decurs:</strong> A explorat aplicația de pe telefon, accesând categoriile de servicii, profilurile meșterilor, filtrele de căutare, secțiunea de rezervări și notificările. </p>
+              <p><strong>Ce i-a plăcut:</strong> Aplicatia este intuitivă și ușor de folosit, culorile sunt unele moderne ceea ce aduce utilizatorului o experiență plăcută.</p>
+              <p><strong>Ce ar modifica:</strong></p>
+              <ul>
+                <li>Uniformizarea limbii utilizate în interfața aplicației.</li>
+                <li>Informarea utilizatorului din timp cu privire la necesitatea autentificării pentru efectuarea unei rezervări.</li>
+                <li>Interfata cu contul utilizatorului sa fie mai intuitivă sau sub forma unui sidebar.</li>
+              </ul>
+              <p><strong>Dovada:</strong>{" "}
+                <a href="https://drive.google.com/file/d/1JkrybQJDWD_5_hlljp4W3dnHxebDRXKo/view?usp=sharing" target="_blank" rel="noreferrer">
+                  Vezi dovada aici
+                </a>
+              </p>
+            </article>
+            <article className="advantage_card">
+              <span>Interviu 4</span>
+              <h3>Dragos-Cristian Bute, 27 de ani</h3>
+              <p><strong>Data / locul:</strong> Online, pe Teams</p>
+              <p><strong>Cum a decurs:</strong> A explorat în detaliu aplicația, analizând atât aspectul vizual, cât și funcționalitățile disponibile. A parcurs mai multe secțiuni și a oferit feedback pe parcursul utilizării aplicației. </p>
+              <p><strong>Ce i-a plăcut:</strong> Simplitatea aplicației și modul de funcționare intuitiv. </p>
+              <p><strong>Ce ar modifica:</strong></p>
+              <ul>
+                <li>Simplificarea designului prin reducerea numărului de gradiente și uniformizarea stilului butoanelor.</li>
+
+                <li>Uniformizarea limbii utilizate în aplicație.</li>
+
+                <li>Corectarea sortării după rating, evidențierea filtrelor active și adăugarea unui buton pentru resetarea acestora.</li>
+
+                <li>Explicarea criteriilor pe baza cărora sunt recomandați meșterii pe pagina principală.</li>
+
+                <li>La selectarea unei categorii, să fie afișate serviciile corespunzătoare acesteia, nu doar lista meșterilor.</li>
+
+                <li>Îmbunătățirea secțiunilor de portofoliu și recenzii, precum și a funcționalității de partajare a profilului.</li>
+              </ul>
+              <p><strong>Dovada:</strong>{" "}
+                <a href="https://drive.google.com/file/d/1mIO_bcaib-wyy1Xa-A1Qy81KE4SGzLTP/view?usp=sharing" target="_blank" rel="noreferrer">
+                  Vezi dovada aici
+                </a>
+              </p>
+            </article>
           </div>
         </div>
       </section>
