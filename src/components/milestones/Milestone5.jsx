@@ -317,7 +317,7 @@ export function Milestone5() {
               efectiv funcționalitățile platformei.
             </li>
             <li>
-              <strong>Zona fierbinte a formularului:</strong> Cele mai intense
+              <strong>Zona cea mai activă a formularului:</strong> Cele mai intense
               interacțiuni se concentrează pe căsuța de bifare a consimțământului
               și pe butonul portocaliu „Anunță-mă”, confirmând claritatea și
               eficiența secțiunii finale de conversie.
